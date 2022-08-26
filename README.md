@@ -4,3 +4,5 @@ _I probably won't do that, but who knows...~~_
 
 ## First Release
  - 08/26/2022
+ - Simple HTML/CSS
+ - KeyListener
