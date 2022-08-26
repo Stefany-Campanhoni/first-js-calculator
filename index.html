@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="coiso">
+        <main class="mainCalculator">
+            <section class="display">
+                <input type="text" name="Coisooo" id="display" disabled placeholder="0" class="display2" maxlength="4">
+            </section>
+            <section class="buttons">
+                <div>
+                    <button name="percent" id="percent"  onclick="addOperation('%')">%</button>
+                    <button name="c" id="c" onclick="clearAll()">C</button>
+                    <button name="ce" id="ce" onclick="clearDisplay()">Ce</button>
+                    <button name="del" id="del" onclick="del('del')">&lt;</button>
+                </div>
+                <div>
+                    <button name="7" id="7" onclick="addNumber('7')">7</button>
+                    <button name="8" id="8" onclick="addNumber('8')">8</button>
+                    <button name="9" id="9" onclick="addNumber('9')">9</button>
+                    <button name="divide" id="divide" onclick="addOperation('/')">/</button>
+                </div>
+                <div>
+                    <button name="4" id="4" onclick="addNumber('4')">4</button>
+                    <button name="5" id="5" onclick="addNumber('5')">5</button>
+                    <button name="6" id="6" onclick="addNumber('6')">6</button>
+                    <button name="minus" id="minus" onclick="addOperation('-')">-</button>
+                </div>
+                <div>
+                    <button name="1" id="1" onclick="addNumber('1')">1</button>
+                    <button name="2" id="2" onclick="addNumber('2')">2</button>
+                    <button name="3" id="3" onclick="addNumber('3')">3</button>
+                    <button name="plus" id="plus" onclick="addOperation('+')">+</button>
+                </div>
+                <div>
+                    <button name="0" id="0" onclick="addNumber('0')">0</button>
+                    <button name="dot" id="dot" onclick="addNumber('.')">.</button>
+                    <button name="equals" id="equals" onclick="equals()">=</button>
+                    <button name="multiply" id="multiply" onclick="addOperation('*')">*</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
