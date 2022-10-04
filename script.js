@@ -63,10 +63,12 @@ function equals() {
             result = previousNum * Number(currentNum);
             break;
         case '/':
-            if (currentNum == '0') {
-                result = "Seriously";
+            if (Number(currentNum) == 0) {
+                result = "Seriously?";
+            } else {
+                result = previousNum / Number(currentNum);
             }
-            result = previousNum / Number(currentNum);
+            
             break;
         case '-':
             result = previousNum - Number(currentNum);
@@ -83,7 +85,9 @@ function coisar(result) {
     operation = '0';
 
     display.style.color = "violet";
-    if (!result == 0) {
+    if (result === "Seriously?") {
+        display.value = result;
+    } else if (!result == 0) {
         display.value = result.toFixed(2);
     } else {
         display.value = result;
